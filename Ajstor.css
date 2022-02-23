@@ -1,0 +1,351 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 16vh;
+}
+
+nav ul {
+    float: right;
+    margin-right: 400px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+
+}
+
+a.active, a:hover {
+    border-bottom: 1px solid rgb(89, 158, 147);
+    transition: 0.5s;
+}
+
+
+
+
+.i {
+    display: flex;
+    height: 70vh;
+    margin: 0 30px 0 10px;
+
+}
+
+.brand-img {
+    margin-top: 30px;
+    padding: 0;
+    height: 10%;
+    width: 4%;
+}
+
+.i-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-left-wrapper {
+    padding: 30px 30px 0 30px;
+    margin-bottom: 0;
+    /* height: 90%; */
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.i-intro {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+
+}
+
+.i-name {
+    font-size: 50px;
+    margin: 0;
+}
+
+
+.fa-star {
+    color: gold;
+}
+
+.i-name span {
+    color: rgb(89, 158, 147);
+}
+
+.i-title {
+    height: 50px;
+    overflow: hidden;
+}
+
+
+
+
+.i-price {
+    margin: 10px 0 0 0;
+    font-weight: 200;
+
+}
+
+.i-price span {
+    font-weight: 1000;
+    font-size: larger;
+}
+
+
+.i-size select {
+    margin: 20px 0 10px 0;
+    align-items: flex-start;
+    font-size: 18px;
+    width: 500px;
+    padding: 10px;
+}
+
+.i-size {
+    margin-bottom: 20px;
+}
+
+.input-1 {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.i-buttons {
+    align-items: flex-start;
+}
+
+.i-buttons .i-bag-btn {
+    height: 40px;
+    width: 350px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(20, 18, 18);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.i-buttons .i-wishList-btn {
+    height: 40px;
+    width: 150px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    75% {
+        transform: translateY(-150px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+
+}
+
+.i-title-item {
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(89, 158, 147);
+    display: flex;
+    align-items: center;
+}
+
+.i-img {
+    height: 80%;
+    width: 80%;
+    margin-bottom: 10px;
+    object-fit: contain;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .i {
+        flex-direction: column;
+    }
+
+
+    header {
+        display: none;
+    }
+
+    .brand-img {
+        display: none;
+    }
+
+    .i-left-wrapper {
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+    .i-title {
+
+
+        visibility: inherit;
+    }
+
+    .i-desc {
+        display: none;
+    }
+
+
+
+    .i-img {
+        margin: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .i {
+        flex-direction: column;
+    }
+
+
+    header {
+        display: none;
+    }
+
+    .brand-img {
+        display: none;
+    }
+
+
+    .i-left-wrapper {
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .i-desc {
+        display: none;
+    }
+
+    .i-img {
+        height: 100%;
+        width: 100%;
+       
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+
+    .i-left-wrapper {
+        /* padding: 10px; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    header {
+        display: none;
+    }
+
+    .brand-img {
+        display: none;
+    }
+
+
+    .i-desc {
+        display: none;
+    }
+
+    .i-img {
+        object-fit: contain;
+    }
+
+
+    .i-size select {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
+        width: 250px;
+        padding: 10px;
+    }
+
+    .input-1 {
+
+        display: flex;
+        justify-content: flex-start;
+        height: 30px;
+        width: 240px;
+        font-size: 10px;
+    }
+
+
+    .i-buttons {
+        align-self: flex-start;
+
+    }
+
+    .i-buttons .i-bag-btn {
+
+        width: 150px;
+        font-size: 12px;
+
+    }
+
+    .i-buttons .i-wishList-btn {
+
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+}
